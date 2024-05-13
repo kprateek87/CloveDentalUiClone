@@ -1,0 +1,605 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/************** Defaults *************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.arrow {
+  color: #f5781d;
+}
+.star {
+  color: gold;
+}
+/************** Header Section *************/
+.navbar,
+.nav-menu ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu-btn{
+  display: none;
+}
+.navbar {
+  padding: 10px 40px;
+  font-size: 24px;
+  background: #fff1e6;
+}
+.nav-menu ul {
+  gap: 20px;
+}
+.nav-menu ul li a {
+  color: #000;
+}
+.btn,
+.help-btn {
+  font-size: 24px;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  padding: 20px;
+}
+.btn {
+  color: #fff;
+  background: #f5781d;
+}
+.help-btn {
+  border: 1px solid #fbbe9c;
+  color: #4d2c19;
+}
+
+/************** Hero Section *************/
+.hero {
+  overflow: hidden;
+  position: relative;
+}
+.hero-inner {
+  display: flex;
+  width: 200%;
+  position: relative;
+  animation: slideshow 20s infinite;
+}
+@keyframes slideshow {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  30% {
+    left: -100%;
+  }
+  50% {
+    left: -100%;
+  }
+  60% {
+    left: 0;
+  }
+  80% {
+    left: 0%;
+  }
+  90% {
+    left: -100%;
+  }
+}
+.hero1,
+.hero2 {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  align-items: center;
+}
+.hero1 {
+  background: #b5c1a6;
+}
+.hero2 {
+  background-image: url(../img/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero2 .bnr-txt {
+  background-color: #ffffffc5;
+}
+.bnr-txt {
+  padding: 100px;
+}
+.bnr-txt h1 {
+  font-size: 50px;
+}
+.bnr-txt p {
+  font-size: 36px;
+  font-weight: 300;
+}
+.bnr-txt h2 {
+  font-size: 40px;
+}
+.bnr-txt .buy-btn {
+  padding: 20px 80px;
+  margin-top: 20px;
+}
+.bnr-img {
+  margin-bottom: -60px;
+  padding: 100px 100px 50px 100px;
+}
+
+/************** Google Search Section ******************/
+.google {
+  display: flex;
+  align-items: center;
+  padding: 30px 100px;
+  justify-content: space-between;
+}
+.google-search,
+.rating,
+.g-search {
+  display: flex;
+  align-items: center;
+}
+.rating {
+  margin-right: 40px;
+  gap: 20px;
+}
+.g-ratings {
+  font-size: 20px;
+}
+.g-search {
+  flex-direction: column;
+  padding: 40px;
+  border-left: 1px solid #f5781d;
+}
+.g-search select {
+  width: 100%;
+  font-size: 20px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  margin: 10px 0;
+}
+/************* Teeth Section **************/
+.teeth {
+  margin: 100px;
+  padding: 40px;
+  text-align: center;
+  background: #fff9f4;
+}
+.teeth-cat {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: auto auto auto auto auto auto;
+  padding: 30px;
+  text-transform: capitalize;
+}
+.teeth-cat div {
+  background-color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Booking Section */
+.booking {
+  margin: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border-radius: 20px;
+}
+.consult-form {
+  background: #fff9f4;
+  padding: 45px;
+  width: 30%;
+}
+.consult-form h1 {
+  font-size: 45px;
+}
+.consult-form .form {
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.consult-form .form input,
+.consult-form .form select {
+  padding: 15px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  background: #fff;
+  border-radius: 50px;
+  margin: 15px 0;
+}
+.clinic-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100%;
+}
+.clinic-info .protocols {
+  padding: 40px;
+  display: flex;
+  align-items: start;
+  background: #fbf5ff;
+}
+.clinic-info .protocols h2 {
+  font-size: 46px;
+}
+.clinic-info .protocols p {
+  font-size: 30px;
+}
+.clinic-info .protocols .protocol-img {
+  margin-bottom: -50px;
+}
+.local {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.clinics,
+.doctors {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  width: 50%;
+  padding: 20px;
+}
+.clinics {
+  background: #f5f8ff;
+}
+.doctors {
+  background: #f5f8ff;
+}
+.clinics h2,
+.doctors h2 {
+  font-size: 30px;
+}
+.clinics img,
+.doctors img {
+  margin: 10px 0;
+}
+
+.shorts {
+  margin: 100px;
+}
+.shorts h1 {
+  margin: 50px 0;
+  text-align: center;
+}
+.shorts .short-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: nowrap;
+}
+.card {
+  font-weight: 500;
+  font-size: 20px;
+}
+.card img {
+  width: 350px;
+  border-radius: 20px;
+}
+.meet {
+  padding-left: 100px;
+  display: flex;
+  align-items: center;
+}
+.meet-heads {
+  width: 50%;
+}
+.meet-heads h1 {
+  font-size: 44px;
+  font-weight: 700;
+}
+.meet-heads ul li {
+  display: flex;
+  align-items: center;
+  margin: 30px 0;
+}
+.meet-heads ul li img {
+  height: 100px;
+  margin-right: 50px;
+}
+.meet-docs .cards {
+  display: flex;
+  gap: 20px;
+}
+.meet-docs img {
+  height: 450px;
+  margin-bottom: 20px;
+}
+.meet-btn {
+  margin: 30px 0;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+marquee {
+  background-color: #ffefe2;
+  padding: 10px 0;
+}
+marquee ul {
+  display: flex;
+  font-weight: 600;
+  font-size: 20px;
+}
+.experience{
+  display: flex;
+  margin: 50px 0;
+}
+
+.assure,.aips,.safety{
+  background: url(../img/banner.png) no-repeat;
+  border-radius: 50px;
+  margin: 0 30px;
+}
+.assure>.exp-content{
+  background: #112230;
+}
+.aips>.exp-content{
+  background: #36261d;
+}
+.safety>.exp-content{
+  background: #433943;
+}
+.exp-content{
+  margin: 100px;
+  padding: 50px;
+  border-radius: 50px;
+  color: #fff;
+}
+.exp-content a.arrow{
+  margin: 20px 0;
+}
+.exp-content .exp-heading{
+  font-size:30px;
+}
+/********** Blog section *************/
+.blog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff9f4;
+  margin-top: 30px;
+  padding: 100px;
+}
+.blog ul {
+  display: flex;
+  gap: 30px;
+  margin: 30px 0;
+  font-size: 20px;
+
+  align-items: center;
+}
+.blog ul li a {
+  color: #878787;
+}
+.blog ul li a.active,
+.blog ul li a:hover {
+  color: #f5781d;
+  font-weight: 600;
+  transition: all ease-in;
+  transition-duration: 0.8s;
+}
+.blog-posts {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: auto auto auto;
+  padding: 30px;
+}
+.blog-posts .post {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.post .post-img img {
+  height: 100px;
+}
+.post .post-title p {
+  margin: 5px 0;
+  color: #878787;
+}
+
+/************* Partner Section*********************/
+.partners {
+  margin: 100px;
+  display: flex;
+  flex-direction: column;
+}
+.partners .partners-banner {
+  box-shadow: 5px 10px 10px #000;
+  border-radius: 50px;
+}
+.partners-list {
+  border-radius: 50px;
+  background: #fff;
+  margin: -300px 50px 50px 50px;
+  padding: 30px 100px;
+  box-shadow: 5px 10px 10px #000;
+  text-align: center;
+}
+.partners-list > h1.arrow {
+  font-size: 50px;
+}
+.partners-list > h1 {
+  font-size: 44px;
+  text-align: left;
+}
+.partners-list > p {
+  font-size: 22px;
+  color: #999;
+  text-align: left;
+}
+.partners-list marquee {
+  margin: 40px 0;
+  background: #fff;
+}
+.partners-list marquee img {
+  height: 50px;
+}
+.partners-list .appointment {
+  display: block;
+  margin: 30px auto;
+}
+.mapping {
+  margin: 100px;
+  padding: 100px;
+  background: #fff9f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.mapping h1 {
+  font-size: 40px;
+}
+.mapping p {
+  color: #878787;
+  font-size: 20px;
+}
+.mapping ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.mapping ul li {
+  background: #fff;
+  padding: 30px;
+  text-align: center;
+}
+.faq {
+  margin: 100px;
+  padding: 100px;
+}
+.faq .faq-questions {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: 20px 0;
+}
+.faq-question {
+  margin-bottom: 20px;
+  max-width: 600px;
+}
+.faq-lable {
+  font-weight: 700;
+  font-size: 22px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.faq-answer {
+  display: none;
+  margin-top: 10px;
+}
+.faq-question input[type="checkbox"] {
+  display: none;
+}
+.faq-question input[type="checkbox"]:checked + .faq-lable + .faq-answer {
+  display: block;
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 100px;
+  background: #4d2c19;
+  color: #fff;
+}
+footer h1 {
+  font-weight: 300;
+  font-size: 44px;
+}
+footer ul li {
+  margin: 10px 0;
+}
+footer a {
+  color: #999;
+  font-size: 22px;
+}
+footer a:hover {
+  color: #fff;
+  font-size: 22px;
+}
+
+
+@media (max-width: 768px) {
+.nav-menu{
+  display: none;
+}
+.logo{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.menu-btn{
+  display: flex;
+  font-size: 24px;
+}
+.btn{
+  font-size: 20px;
+}
+.google {
+  padding: 10px 10px;
+}
+.teeth {
+  margin: 30px 0;
+}
+.teeth-cat {
+  grid-template-columns: auto auto auto;
+}
+.blog-posts {
+  grid-template-columns: auto auto;
+}
+.booking {
+  margin: 0;
+  display:block;
+}
+.consult-form{
+  width: 100%;
+}
+.meet {
+  display: block;
+}
+.meet-heads {
+  width: 100%;
+}
+.blog ul{
+  gap: 10px;
+  font-size: 16px;
+}
+.partners{
+  margin: 0;
+}
+.partners-list marquee {
+  margin: 10px;
+}
+.mapping{
+  margin: 50px 0;
+}
+.faq{
+  margin: 0;
+  padding: 0 20px;
+}
+footer{
+  padding: 20px;
+}
+footer h1{
+  font-size: 30px;
+}
+footer p{
+  font-size: 16px;
+}
+}
